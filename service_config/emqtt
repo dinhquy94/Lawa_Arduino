@@ -1,0 +1,49 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          dovecot
+# Required-Start:    $local_fs $network
+# Required-Stop:     $local_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: dovecot
+# Description:       dovecot pop & imap daemon
+### END INIT INFO
+# emqttd       Startup script for emqttd.
+#
+# chkconfig: 2345 90 10
+# description: emqttd is mqtt broker.
+
+# source function library
+. /lib/lsb/init-functions
+
+export HOME=/root
+
+start() {
+    echo "starting emqttd..."
+    /home/dinhquy/Desktop/emqttd/bin/emqttd start
+}
+
+stop() {
+    echo "stopping emqttd..."
+    cd /opt/emqttd && ./bin/emqttd stop
+}
+
+restart() {
+    stop
+    start
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        restart
+        ;;
+    *)
+        echo $"Usage: $0 {start|stop}"
+        RETVAL=2
+esac

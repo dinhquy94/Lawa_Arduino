@@ -1,0 +1,493 @@
+
+=====
+===== LOGGING STARTED Sat Oct  8 15:53:18 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+Erlang/OTP 18 [erts-7.3] [source] [64-bit] [smp:4:4] [async-threads:24] [kernel-poll:true]
+
+starting emqttd on node 'emqttd@127.0.0.1'
+
+=INFO REPORT==== 8-Oct-2016::15:53:19 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+emqttd ctl is starting...[ok]
+emqttd hook is starting...[ok]
+emqttd router is starting...[ok]
+emqttd pubsub is starting...[ok]
+emqttd stats is starting...[ok]
+emqttd metrics is starting...[ok]
+emqttd pooler is starting...[ok]
+emqttd trace is starting...[ok]
+emqttd client manager is starting...[ok]
+emqttd session manager is starting...[ok]
+emqttd session supervisor is starting...[ok]
+emqttd wsclient supervisor is starting...[ok]
+emqttd broker is starting...[ok]
+emqttd alarm is starting...[ok]
+emqttd mod supervisor is starting...[ok]
+emqttd bridge supervisor is starting...[ok]
+emqttd access control is starting...[ok]
+emqttd system monitor is starting...[ok]
+dashboard listen on 0.0.0.0:18083 with 4 acceptors.
+mqtt listen on 0.0.0.0:1883 with 16 acceptors.
+mqtts listen on 0.0.0.0:8883 with 4 acceptors.
+http listen on 0.0.0.0:8083 with 4 acceptors.
+Erlang MQTT Broker 2.0 is running now
+Eshell V7.3  (abort with ^G)
+(emqttd@127.0.0.1)1> 
+=====
+===== LOGGING STARTED Sat Oct  8 15:53:23 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+{error_logger,{{2016,10,8},{15,53,24}},"Protocol: ~tp: the name emqttd@127.0.0.1 seems to be in use by another Erlang node",["inet_tcp"]}
+{error_logger,{{2016,10,8},{15,53,24}},crash_report,[[{initial_call,{net_kernel,init,['Argument__1']}},{pid,<0.805.0>},{registered_name,[]},{error_info,{exit,{error,badarg},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}},{ancestors,[net_sup,kernel_sup,<0.793.0>]},{messages,[]},{links,[#Port<0.1802>,<0.802.0>]},{dictionary,[{longnames,true}]},{trap_exit,true},{status,running},{heap_size,987},{stack_size,27},{reductions,820}],[]]}
+{error_logger,{{2016,10,8},{15,53,24}},supervisor_report,[{supervisor,{local,net_sup}},{errorContext,start_error},{reason,{'EXIT',nodistribution}},{offender,[{pid,undefined},{id,net_kernel},{mfargs,{net_kernel,start_link,[['emqttd@127.0.0.1',longnames]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]}]}
+{error_logger,{{2016,10,8},{15,53,24}},supervisor_report,[{supervisor,{local,kernel_sup}},{errorContext,start_error},{reason,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}},{offender,[{pid,undefined},{id,net_sup},{mfargs,{erl_distribution,start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]}]}
+{error_logger,{{2016,10,8},{15,53,24}},crash_report,[[{initial_call,{application_master,init,['Argument__1','Argument__2','Argument__3','Argument__4']}},{pid,<0.792.0>},{registered_name,[]},{error_info,{exit,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{kernel,start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}},{ancestors,[<0.791.0>]},{messages,[{'EXIT',<0.793.0>,normal}]},{links,[<0.791.0>,<0.790.0>]},{dictionary,[]},{trap_exit,true},{status,running},{heap_size,376},{stack_size,27},{reductions,117}],[]]}
+{error_logger,{{2016,10,8},{15,53,24}},std_info,[{application,kernel},{exited,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{kernel,start,[normal,[]]}}},{type,permanent}]}
+{"Kernel pid terminated",application_controller,"{application_start_failure,kernel,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{kernel,start,[normal,[]]}}}"}
+
+Crash dump is being written to: log/emqttd_crash.dump...done
+Kernel pid terminated (application_controller) ({application_start_failure,kernel,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{k
+
+=====
+===== LOGGING STARTED Sat Oct  8 15:53:33 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+{error_logger,{{2016,10,8},{15,53,34}},"Protocol: ~tp: the name emqttd@127.0.0.1 seems to be in use by another Erlang node",["inet_tcp"]}
+{error_logger,{{2016,10,8},{15,53,34}},crash_report,[[{initial_call,{net_kernel,init,['Argument__1']}},{pid,<0.805.0>},{registered_name,[]},{error_info,{exit,{error,badarg},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}},{ancestors,[net_sup,kernel_sup,<0.793.0>]},{messages,[]},{links,[#Port<0.1802>,<0.802.0>]},{dictionary,[{longnames,true}]},{trap_exit,true},{status,running},{heap_size,987},{stack_size,27},{reductions,820}],[]]}
+{error_logger,{{2016,10,8},{15,53,34}},supervisor_report,[{supervisor,{local,net_sup}},{errorContext,start_error},{reason,{'EXIT',nodistribution}},{offender,[{pid,undefined},{id,net_kernel},{mfargs,{net_kernel,start_link,[['emqttd@127.0.0.1',longnames]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]}]}
+{error_logger,{{2016,10,8},{15,53,34}},supervisor_report,[{supervisor,{local,kernel_sup}},{errorContext,start_error},{reason,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}},{offender,[{pid,undefined},{id,net_sup},{mfargs,{erl_distribution,start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]}]}
+{error_logger,{{2016,10,8},{15,53,34}},crash_report,[[{initial_call,{application_master,init,['Argument__1','Argument__2','Argument__3','Argument__4']}},{pid,<0.792.0>},{registered_name,[]},{error_info,{exit,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{kernel,start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}},{ancestors,[<0.791.0>]},{messages,[{'EXIT',<0.793.0>,normal}]},{links,[<0.791.0>,<0.790.0>]},{dictionary,[]},{trap_exit,true},{status,running},{heap_size,376},{stack_size,27},{reductions,117}],[]]}
+{error_logger,{{2016,10,8},{15,53,34}},std_info,[{application,kernel},{exited,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{kernel,start,[normal,[]]}}},{type,permanent}]}
+{"Kernel pid terminated",application_controller,"{application_start_failure,kernel,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{kernel,start,[normal,[]]}}}"}
+
+Crash dump is being written to: log/emqttd_crash.dump...done
+Kernel pid terminated (application_controller) ({application_start_failure,kernel,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{k
+
+===== ALIVE Sat Oct  8 16:08:19 ICT 2016
+
+===== ALIVE Sat Oct  8 16:23:19 ICT 2016
+
+===== ALIVE Sat Oct  8 16:38:20 ICT 2016
+
+=====
+===== LOGGING STARTED Sun Nov 27 11:10:12 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+Erlang/OTP 18 [erts-7.3] [source] [64-bit] [smp:4:4] [async-threads:24] [kernel-poll:true]
+
+starting emqttd on node 'emqttd@127.0.0.1'
+emqttd ctl is starting...[ok]
+emqttd hook is starting...[ok]
+emqttd router is starting...[ok]
+emqttd pubsub is starting...[ok]
+emqttd stats is starting...[ok]
+emqttd metrics is starting...[ok]
+emqttd pooler is starting...[ok]
+emqttd trace is starting...[ok]
+emqttd client manager is starting...[ok]
+emqttd session manager is starting...[ok]
+emqttd session supervisor is starting...[ok]
+emqttd wsclient supervisor is starting...[ok]
+emqttd broker is starting...[ok]
+emqttd alarm is starting...[ok]
+emqttd mod supervisor is starting...[ok]
+emqttd bridge supervisor is starting...[ok]
+emqttd access control is starting...[ok]
+emqttd system monitor is starting...[ok]
+dashboard listen on 0.0.0.0:18083 with 4 acceptors.
+mqtt listen on 0.0.0.0:1883 with 16 acceptors.
+mqtts listen on 0.0.0.0:8883 with 4 acceptors.
+http listen on 0.0.0.0:8083 with 4 acceptors.
+Erlang MQTT Broker 2.0 is running now
+Eshell V7.3  (abort with ^G)
+(emqttd@127.0.0.1)1> 
+===== Sun Nov 27 11:21:02 ICT 2016
+stopped http on 0.0.0.0:8083
+stopped mqtts on 0.0.0.0:8883
+stopped mqtt on 0.0.0.0:1883
+stopped dashboard on 0.0.0.0:18083
+[os_mon] memory supervisor port (memsup): Erlang has closed
+[os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+
+=====
+===== LOGGING STARTED Sun Nov 27 11:21:07 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+Erlang/OTP 18 [erts-7.3] [source] [64-bit] [smp:4:4] [async-threads:24] [kernel-poll:true]
+
+starting emqttd on node 'emqttd@127.0.0.1'
+emqttd ctl is starting...[ok]
+emqttd hook is starting...[ok]
+emqttd router is starting...[ok]
+emqttd pubsub is starting...[ok]
+emqttd stats is starting...[ok]
+emqttd metrics is starting...[ok]
+emqttd pooler is starting...[ok]
+emqttd trace is starting...[ok]
+emqttd client manager is starting...[ok]
+emqttd session manager is starting...[ok]
+emqttd session supervisor is starting...[ok]
+emqttd wsclient supervisor is starting...[ok]
+emqttd broker is starting...[ok]
+emqttd alarm is starting...[ok]
+emqttd mod supervisor is starting...[ok]
+emqttd bridge supervisor is starting...[ok]
+emqttd access control is starting...[ok]
+emqttd system monitor is starting...[ok]
+dashboard listen on 0.0.0.0:18083 with 4 acceptors.
+mqtt listen on 0.0.0.0:1883 with 16 acceptors.
+mqtts listen on 0.0.0.0:8883 with 4 acceptors.
+http listen on 0.0.0.0:8083 with 4 acceptors.
+Erlang MQTT Broker 2.0 is running now
+Eshell V7.3  (abort with ^G)
+(emqttd@127.0.0.1)1> 
+=INFO REPORT==== 27-Nov-2016::11:22:08 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+
+===== ALIVE Sun Nov 27 11:37:08 ICT 2016
+stopped http on 0.0.0.0:8083
+stopped mqtts on 0.0.0.0:8883
+stopped mqtt on 0.0.0.0:1883
+stopped dashboard on 0.0.0.0:18083
+[os_mon] memory supervisor port (memsup): Erlang has closed
+
+=INFO REPORT==== 27-Nov-2016::11:39:11 ===
+    alarm_handler: {clear,system_memory_high_watermark}
+[os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+
+=====
+===== LOGGING STARTED Sun Nov 27 11:52:21 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+erlexec: HOME must be set
+
+=====
+===== LOGGING STARTED Sun Nov 27 11:56:44 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+starting emqttd on node 'emqttd@127.0.0.1'
+
+=INFO REPORT==== 27-Nov-2016::11:56:45 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+emqttd ctl is starting...[ok]
+emqttd hook is starting...[ok]
+emqttd router is starting...[ok]
+emqttd pubsub is starting...[ok]
+emqttd stats is starting...[ok]
+emqttd metrics is starting...[ok]
+emqttd pooler is starting...[ok]
+emqttd trace is starting...[ok]
+emqttd client manager is starting...[ok]
+emqttd session manager is starting...[ok]
+emqttd session supervisor is starting...[ok]
+emqttd wsclient supervisor is starting...[ok]
+emqttd broker is starting...[ok]
+emqttd alarm is starting...[ok]
+emqttd mod supervisor is starting...[ok]
+emqttd bridge supervisor is starting...[ok]
+emqttd access control is starting...[ok]
+emqttd system monitor is starting...[ok]
+dashboard listen on 0.0.0.0:18083 with 4 acceptors.
+mqtt listen on 0.0.0.0:1883 with 16 acceptors.
+mqtts listen on 0.0.0.0:8883 with 4 acceptors.
+http listen on 0.0.0.0:8083 with 4 acceptors.
+Erlang MQTT Broker 2.0 is running now
+Eshell V7.3  (abort with ^G)
+(emqttd@127.0.0.1)1> 
+=INFO REPORT==== 27-Nov-2016::11:58:45 ===
+    alarm_handler: {clear,system_memory_high_watermark}
+(emqttd@127.0.0.1)1> 
+=====
+===== LOGGING STARTED Sun Nov 27 12:18:44 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+starting emqttd on node 'emqttd@127.0.0.1'
+
+=INFO REPORT==== 27-Nov-2016::12:18:48 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+emqttd ctl is starting...[ok]
+emqttd hook is starting...[ok]
+emqttd router is starting...[ok]
+emqttd pubsub is starting...[ok]
+emqttd stats is starting...[ok]
+emqttd metrics is starting...[ok]
+emqttd pooler is starting...[ok]
+emqttd trace is starting...[ok]
+emqttd client manager is starting...[ok]
+emqttd session manager is starting...[ok]
+emqttd session supervisor is starting...[ok]
+emqttd wsclient supervisor is starting...[ok]
+emqttd broker is starting...[ok]
+emqttd alarm is starting...[ok]
+emqttd mod supervisor is starting...[ok]
+emqttd bridge supervisor is starting...[ok]
+emqttd access control is starting...[ok]
+emqttd system monitor is starting...[ok]
+dashboard listen on 0.0.0.0:18083 with 4 acceptors.
+mqtt listen on 0.0.0.0:1883 with 16 acceptors.
+mqtts listen on 0.0.0.0:8883 with 4 acceptors.
+http listen on 0.0.0.0:8083 with 4 acceptors.
+Erlang MQTT Broker 2.0 is running now
+Eshell V7.3  (abort with ^G)
+(emqttd@127.0.0.1)1> stopped http on 0.0.0.0:8083
+(emqttd@127.0.0.1)1> stopped mqtts on 0.0.0.0:8883
+(emqttd@127.0.0.1)1> stopped mqtt on 0.0.0.0:1883
+(emqttd@127.0.0.1)1> stopped dashboard on 0.0.0.0:18083
+(emqttd@127.0.0.1)1> [os_mon] memory supervisor port (memsup): Erlang has closed
+
+=INFO REPORT==== 27-Nov-2016::12:19:46 ===
+    alarm_handler: {clear,system_memory_high_watermark}
+(emqttd@127.0.0.1)1> [os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+
+=====
+===== LOGGING STARTED Sun Nov 27 12:20:27 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+
+=INFO REPORT==== 27-Nov-2016::12:20:28 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+starting emqttd on node 'emqttd@127.0.0.1'
+emqttd ctl is starting...[ok]
+emqttd hook is starting...[ok]
+emqttd router is starting...[ok]
+emqttd pubsub is starting...[ok]
+emqttd stats is starting...[ok]
+emqttd metrics is starting...[ok]
+emqttd pooler is starting...[ok]
+emqttd trace is starting...[ok]
+emqttd client manager is starting...[ok]
+emqttd session manager is starting...[ok]
+emqttd session supervisor is starting...[ok]
+emqttd wsclient supervisor is starting...[ok]
+emqttd broker is starting...[ok]
+emqttd alarm is starting...[ok]
+emqttd mod supervisor is starting...[ok]
+emqttd bridge supervisor is starting...[ok]
+emqttd access control is starting...[ok]
+emqttd system monitor is starting...[ok]
+dashboard listen on 0.0.0.0:18083 with 4 acceptors.
+mqtt listen on 0.0.0.0:1883 with 16 acceptors.
+mqtts listen on 0.0.0.0:8883 with 4 acceptors.
+http listen on 0.0.0.0:8083 with 4 acceptors.
+Erlang MQTT Broker 2.0 is running now
+Eshell V7.3  (abort with ^G)
+(emqttd@127.0.0.1)1> stopped http on 0.0.0.0:8083
+(emqttd@127.0.0.1)1> stopped mqtts on 0.0.0.0:8883
+(emqttd@127.0.0.1)1> stopped mqtt on 0.0.0.0:1883
+(emqttd@127.0.0.1)1> stopped dashboard on 0.0.0.0:18083
+(emqttd@127.0.0.1)1> [os_mon] memory supervisor port (memsup): Erlang has closed
+
+=INFO REPORT==== 27-Nov-2016::12:24:52 ===
+    alarm_handler: {clear,system_memory_high_watermark}
+[os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+(emqttd@127.0.0.1)1> 
+=====
+===== LOGGING STARTED Sun Nov 27 12:25:13 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+starting emqttd on node 'emqttd@127.0.0.1'
+
+=INFO REPORT==== 27-Nov-2016::12:25:14 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+emqttd ctl is starting...[ok]
+emqttd hook is starting...[ok]
+emqttd router is starting...[ok]
+emqttd pubsub is starting...[ok]
+emqttd stats is starting...[ok]
+emqttd metrics is starting...[ok]
+emqttd pooler is starting...[ok]
+emqttd trace is starting...[ok]
+emqttd client manager is starting...[ok]
+emqttd session manager is starting...[ok]
+emqttd session supervisor is starting...[ok]
+emqttd wsclient supervisor is starting...[ok]
+emqttd broker is starting...[ok]
+emqttd alarm is starting...[ok]
+emqttd mod supervisor is starting...[ok]
+emqttd bridge supervisor is starting...[ok]
+emqttd access control is starting...[ok]
+emqttd system monitor is starting...[ok]
+dashboard listen on 0.0.0.0:18083 with 4 acceptors.
+mqtt listen on 0.0.0.0:1883 with 16 acceptors.
+mqtts listen on 0.0.0.0:8883 with 4 acceptors.
+http listen on 0.0.0.0:8083 with 4 acceptors.
+Erlang MQTT Broker 2.0 is running now
+Eshell V7.3  (abort with ^G)
+(emqttd@127.0.0.1)1> stopped http on 0.0.0.0:8083
+(emqttd@127.0.0.1)1> stopped mqtts on 0.0.0.0:8883
+(emqttd@127.0.0.1)1> stopped mqtt on 0.0.0.0:1883
+(emqttd@127.0.0.1)1> stopped dashboard on 0.0.0.0:18083
+(emqttd@127.0.0.1)1> [os_mon] memory supervisor port (memsup): Erlang has closed
+
+=INFO REPORT==== 27-Nov-2016::12:26:45 ===
+    alarm_handler: {clear,system_memory_high_watermark}
+(emqttd@127.0.0.1)1> [os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+
+=====
+===== LOGGING STARTED Sun Nov 27 12:26:53 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+starting emqttd on node 'emqttd@127.0.0.1'
+
+=INFO REPORT==== 27-Nov-2016::12:26:54 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+emqttd ctl is starting...[ok]
+emqttd hook is starting...[ok]
+emqttd router is starting...[ok]
+emqttd pubsub is starting...[ok]
+emqttd stats is starting...[ok]
+emqttd metrics is starting...[ok]
+emqttd pooler is starting...[ok]
+emqttd trace is starting...[ok]
+emqttd client manager is starting...[ok]
+emqttd session manager is starting...[ok]
+emqttd session supervisor is starting...[ok]
+emqttd wsclient supervisor is starting...[ok]
+emqttd broker is starting...[ok]
+emqttd alarm is starting...[ok]
+emqttd mod supervisor is starting...[ok]
+emqttd bridge supervisor is starting...[ok]
+emqttd access control is starting...[ok]
+emqttd system monitor is starting...[ok]
+dashboard listen on 0.0.0.0:18083 with 4 acceptors.
+mqtt listen on 0.0.0.0:1883 with 16 acceptors.
+mqtts listen on 0.0.0.0:8883 with 4 acceptors.
+http listen on 0.0.0.0:8083 with 4 acceptors.
+Erlang MQTT Broker 2.0 is running now
+Eshell V7.3  (abort with ^G)
+(emqttd@127.0.0.1)1> stopped http on 0.0.0.0:8083
+(emqttd@127.0.0.1)1> stopped mqtts on 0.0.0.0:8883
+(emqttd@127.0.0.1)1> stopped mqtt on 0.0.0.0:1883
+(emqttd@127.0.0.1)1> stopped dashboard on 0.0.0.0:18083
+(emqttd@127.0.0.1)1> [os_mon] memory supervisor port (memsup): Erlang has closed
+
+=INFO REPORT==== 27-Nov-2016::12:27:05 ===
+    alarm_handler: {clear,system_memory_high_watermark}
+(emqttd@127.0.0.1)1> [os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+
+=====
+===== LOGGING STARTED Sun Nov 27 12:28:03 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+starting emqttd on node 'emqttd@127.0.0.1'
+emqttd ctl is starting...[ok]
+emqttd hook is starting...[ok]
+emqttd router is starting...[ok]
+emqttd pubsub is starting...[ok]
+emqttd stats is starting...[ok]
+emqttd metrics is starting...[ok]
+emqttd pooler is starting...[ok]
+emqttd trace is starting...[ok]
+emqttd client manager is starting...[ok]
+emqttd session manager is starting...[ok]
+emqttd session supervisor is starting...[ok]
+emqttd wsclient supervisor is starting...[ok]
+emqttd broker is starting...[ok]
+emqttd alarm is starting...[ok]
+emqttd mod supervisor is starting...[ok]
+emqttd bridge supervisor is starting...[ok]
+emqttd access control is starting...[ok]
+emqttd system monitor is starting...[ok]
+dashboard listen on 0.0.0.0:18083 with 4 acceptors.
+mqtt listen on 0.0.0.0:1883 with 16 acceptors.
+mqtts listen on 0.0.0.0:8883 with 4 acceptors.
+http listen on 0.0.0.0:8083 with 4 acceptors.
+Erlang MQTT Broker 2.0 is running now
+Eshell V7.3  (abort with ^G)
+(emqttd@127.0.0.1)1> 
+=INFO REPORT==== 27-Nov-2016::12:29:22 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+(emqttd@127.0.0.1)1> 
+===== ALIVE Sun Nov 27 12:44:22 ICT 2016
+
+===== ALIVE Sun Nov 27 12:59:22 ICT 2016
+
+===== ALIVE Sun Nov 27 13:14:23 ICT 2016
+
+===== ALIVE Sun Nov 27 13:29:23 ICT 2016
+
+===== ALIVE Sun Nov 27 13:44:23 ICT 2016
+
+===== ALIVE Sun Nov 27 13:59:23 ICT 2016
+
+===== ALIVE Sun Nov 27 14:14:24 ICT 2016
+
+===== ALIVE Sun Nov 27 14:29:24 ICT 2016
+
+===== ALIVE Sun Nov 27 14:44:24 ICT 2016
+
+===== ALIVE Sun Nov 27 14:59:25 ICT 2016
+
+===== ALIVE Sun Nov 27 15:14:25 ICT 2016
+
+===== Sun Nov 27 15:23:26 ICT 2016
+
+=INFO REPORT==== 27-Nov-2016::15:23:26 ===
+    alarm_handler: {clear,system_memory_high_watermark}
+(emqttd@127.0.0.1)1> 
+=====
+===== LOGGING STARTED Sun Nov 27 15:41:12 ICT 2016
+=====
+Exec: /home/dinhquy/Desktop/emqttd/erts-7.3/bin/erlexec -boot /home/dinhquy/Desktop/emqttd/releases/2.0/emqttd -mode embedded -boot_var ERTS_LIB_DIR /home/dinhquy/Desktop/emqttd/erts-7.3/../lib -config /home/dinhquy/Desktop/emqttd/releases/2.0/sys.config -mnesia dir "/home/dinhquy/Desktop/emqttd/data/mnesia/emqttd@127.0.0.1" -args_file /home/dinhquy/Desktop/emqttd/releases/2.0/vm.args -- console
+Root: /home/dinhquy/Desktop/emqttd
+/home/dinhquy/Desktop/emqttd
+starting emqttd on node 'emqttd@127.0.0.1'
+Mnesia('emqttd@127.0.0.1'): previous_log repaired, lost 957 bad bytes
+Mnesia('emqttd@127.0.0.1'): previous_log repaired, lost 7 bad bytes
+Mnesia('emqttd@127.0.0.1'): previous_log repaired, lost 957 bad bytes
+Mnesia('emqttd@127.0.0.1'): previous_log repaired, lost 7 bad bytes
+emqttd ctl is starting...[ok]
+emqttd hook is starting...[ok]
+emqttd router is starting...[ok]
+emqttd pubsub is starting...[ok]
+emqttd stats is starting...[ok]
+emqttd metrics is starting...[ok]
+emqttd pooler is starting...[ok]
+emqttd trace is starting...[ok]
+emqttd client manager is starting...[ok]
+emqttd session manager is starting...[ok]
+emqttd session supervisor is starting...[ok]
+emqttd wsclient supervisor is starting...[ok]
+emqttd broker is starting...[ok]
+emqttd alarm is starting...[ok]
+emqttd mod supervisor is starting...[ok]
+emqttd bridge supervisor is starting...[ok]
+emqttd access control is starting...[ok]
+emqttd system monitor is starting...[ok]
+dashboard listen on 0.0.0.0:18083 with 4 acceptors.
+mqtt listen on 0.0.0.0:1883 with 16 acceptors.
+mqtts listen on 0.0.0.0:8883 with 4 acceptors.
+http listen on 0.0.0.0:8083 with 4 acceptors.
+Erlang MQTT Broker 2.0 is running now
+Eshell V7.3  (abort with ^G)
+(emqttd@127.0.0.1)1> 
+===== Sun Nov 27 15:52:32 ICT 2016
+
+=INFO REPORT==== 27-Nov-2016::15:52:32 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+(emqttd@127.0.0.1)1> 

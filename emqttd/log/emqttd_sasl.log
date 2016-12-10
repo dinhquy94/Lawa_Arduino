@@ -1,0 +1,1499 @@
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,sasl_safe_sup}
+             started: [{pid,<0.830.0>},
+                       {id,alarm_handler},
+                       {mfargs,{alarm_handler,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,sasl_safe_sup}
+             started: [{pid,<0.831.0>},
+                       {id,overload},
+                       {mfargs,{overload,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,sasl_sup}
+             started: [{pid,<0.829.0>},
+                       {id,sasl_safe_sup},
+                       {mfargs,
+                           {supervisor,start_link,
+                               [{local,sasl_safe_sup},sasl,safe]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,sasl_sup}
+             started: [{pid,<0.832.0>},
+                       {id,release_handler},
+                       {mfargs,{release_handler,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: sasl
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,os_mon_sup}
+             started: [{pid,<0.838.0>},
+                       {id,disksup},
+                       {mfargs,{disksup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,os_mon_sup}
+             started: [{pid,<0.839.0>},
+                       {id,memsup},
+                       {mfargs,{memsup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,os_mon_sup}
+             started: [{pid,<0.841.0>},
+                       {id,cpu_sup},
+                       {mfargs,{cpu_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: os_mon
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,runtime_tools_sup}
+             started: [{pid,<0.848.0>},
+                       {id,ttb_autostart},
+                       {mfargs,{ttb_autostart,start_link,[]}},
+                       {restart_type,temporary},
+                       {shutdown,3000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: runtime_tools
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: gen_conf
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: xmerl
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,inets_sup}
+             started: [{pid,<0.855.0>},
+                       {id,ftp_sup},
+                       {mfargs,{ftp_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,httpc_profile_sup}
+             started: [{pid,<0.858.0>},
+                       {id,httpc_manager},
+                       {mfargs,
+                           {httpc_manager,start_link,
+                               [default,only_session_cookies,inets]}},
+                       {restart_type,permanent},
+                       {shutdown,4000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,httpc_sup}
+             started: [{pid,<0.857.0>},
+                       {id,httpc_profile_sup},
+                       {mfargs,
+                           {httpc_profile_sup,start_link,
+                               [[{httpc,{default,only_session_cookies}}]]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,httpc_sup}
+             started: [{pid,<0.859.0>},
+                       {id,httpc_handler_sup},
+                       {mfargs,{httpc_handler_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,inets_sup}
+             started: [{pid,<0.856.0>},
+                       {id,httpc_sup},
+                       {mfargs,
+                           {httpc_sup,start_link,
+                               [[{httpc,{default,only_session_cookies}}]]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,inets_sup}
+             started: [{pid,<0.860.0>},
+                       {id,httpd_sup},
+                       {mfargs,{httpd_sup,start_link,[[]]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,inets_sup}
+             started: [{pid,<0.861.0>},
+                       {id,tftp_sup},
+                       {mfargs,{tftp_sup,start_link,[[]]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: inets
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: syntax_tools
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: compiler
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: crypto
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: asn1
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: public_key
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,ssl_sup}
+             started: [{pid,<0.871.0>},
+                       {id,ssl_manager},
+                       {mfargs,{ssl_manager,start_link,[[]]}},
+                       {restart_type,permanent},
+                       {shutdown,4000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,ssl_sup}
+             started: [{pid,<0.872.0>},
+                       {id,tls_connection},
+                       {mfargs,{tls_connection_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,4000},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,ssl_sup}
+             started: [{pid,<0.873.0>},
+                       {id,ssl_socket},
+                       {mfargs,{ssl_listen_tracker_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,4000},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: ssl
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: mochiweb
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: gen_logger
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,esockd_sup}
+             started: [{pid,<0.880.0>},
+                       {id,esockd_server},
+                       {mfargs,{esockd_server,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: esockd
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,gproc_sup}
+             started: [{pid,<0.885.0>},
+                       {id,gproc},
+                       {mfargs,{gproc,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,gproc_sup}
+             started: [{pid,<0.886.0>},
+                       {id,gproc_monitor},
+                       {mfargs,{gproc_monitor,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,gproc_sup}
+             started: [{pid,<0.887.0>},
+                       {id,gproc_bcast},
+                       {mfargs,{gproc_bcast,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,gproc_sup}
+             started: [{pid,<0.888.0>},
+                       {id,gproc_pool},
+                       {mfargs,{gproc_pool,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+         application: gproc
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,kernel_safe_sup}
+             started: [{pid,<0.893.0>},
+                       {id,dets_sup},
+                       {mfargs,{dets_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,1000},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,kernel_safe_sup}
+             started: [{pid,<0.894.0>},
+                       {id,dets},
+                       {mfargs,{dets_server,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,mnesia_sup}
+             started: [{pid,<0.902.0>},
+                       {id,mnesia_event},
+                       {mfargs,{mnesia_sup,start_event,[]}},
+                       {restart_type,permanent},
+                       {shutdown,30000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,mnesia_kernel_sup}
+             started: [{pid,<0.904.0>},
+                       {id,mnesia_monitor},
+                       {mfargs,{mnesia_monitor,start,[]}},
+                       {restart_type,permanent},
+                       {shutdown,3000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,mnesia_kernel_sup}
+             started: [{pid,<0.905.0>},
+                       {id,mnesia_subscr},
+                       {mfargs,{mnesia_subscr,start,[]}},
+                       {restart_type,permanent},
+                       {shutdown,3000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,mnesia_kernel_sup}
+             started: [{pid,<0.906.0>},
+                       {id,mnesia_locker},
+                       {mfargs,{mnesia_locker,start,[]}},
+                       {restart_type,permanent},
+                       {shutdown,3000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,mnesia_kernel_sup}
+             started: [{pid,<0.907.0>},
+                       {id,mnesia_recover},
+                       {mfargs,{mnesia_recover,start,[]}},
+                       {restart_type,permanent},
+                       {shutdown,180000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,kernel_safe_sup}
+             started: [{pid,<0.912.0>},
+                       {id,disk_log_sup},
+                       {mfargs,{disk_log_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,1000},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:32 ===
+          supervisor: {local,kernel_safe_sup}
+             started: [{pid,<0.913.0>},
+                       {id,disk_log_server},
+                       {mfargs,{disk_log_server,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,mnesia_kernel_sup}
+             started: [{pid,<0.908.0>},
+                       {id,mnesia_tm},
+                       {mfargs,{mnesia_tm,start,[]}},
+                       {restart_type,permanent},
+                       {shutdown,30000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,mnesia_kernel_sup}
+             started: [{pid,<0.926.0>},
+                       {id,mnesia_checkpoint_sup},
+                       {mfargs,{mnesia_checkpoint_sup,start,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,mnesia_kernel_sup}
+             started: [{pid,<0.927.0>},
+                       {id,mnesia_snmp_sup},
+                       {mfargs,{mnesia_snmp_sup,start,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,mnesia_kernel_sup}
+             started: [{pid,<0.928.0>},
+                       {id,mnesia_controller},
+                       {mfargs,{mnesia_controller,start,[]}},
+                       {restart_type,permanent},
+                       {shutdown,3000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,mnesia_kernel_sup}
+             started: [{pid,<0.929.0>},
+                       {id,mnesia_late_loader},
+                       {mfargs,{mnesia_late_loader,start,[]}},
+                       {restart_type,permanent},
+                       {shutdown,3000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,mnesia_sup}
+             started: [{pid,<0.903.0>},
+                       {id,mnesia_kernel_sup},
+                       {mfargs,{mnesia_kernel_sup,start,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+         application: mnesia
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.957.0>},
+                       {id,emqttd_ctl},
+                       {mfargs,{emqttd_ctl,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,10000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.958.0>},
+                       {id,emqttd_hook},
+                       {mfargs,{emqttd_hook,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,10000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.959.0>},
+                       {id,emqttd_router},
+                       {mfargs,{emqttd_router,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,10000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.961.0>,emqttd_pool_sup}
+             started: [{pid,<0.962.0>},
+                       {id,{emqttd_pubsub,1}},
+                       {mfargs,
+                           {emqttd_pubsub,start_link,
+                               [pubsub,1,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.961.0>,emqttd_pool_sup}
+             started: [{pid,<0.963.0>},
+                       {id,{emqttd_pubsub,2}},
+                       {mfargs,
+                           {emqttd_pubsub,start_link,
+                               [pubsub,2,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.961.0>,emqttd_pool_sup}
+             started: [{pid,<0.964.0>},
+                       {id,{emqttd_pubsub,3}},
+                       {mfargs,
+                           {emqttd_pubsub,start_link,
+                               [pubsub,3,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.961.0>,emqttd_pool_sup}
+             started: [{pid,<0.965.0>},
+                       {id,{emqttd_pubsub,4}},
+                       {mfargs,
+                           {emqttd_pubsub,start_link,
+                               [pubsub,4,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.961.0>,emqttd_pool_sup}
+             started: [{pid,<0.966.0>},
+                       {id,{emqttd_pubsub,5}},
+                       {mfargs,
+                           {emqttd_pubsub,start_link,
+                               [pubsub,5,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.961.0>,emqttd_pool_sup}
+             started: [{pid,<0.967.0>},
+                       {id,{emqttd_pubsub,6}},
+                       {mfargs,
+                           {emqttd_pubsub,start_link,
+                               [pubsub,6,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.961.0>,emqttd_pool_sup}
+             started: [{pid,<0.968.0>},
+                       {id,{emqttd_pubsub,7}},
+                       {mfargs,
+                           {emqttd_pubsub,start_link,
+                               [pubsub,7,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.961.0>,emqttd_pool_sup}
+             started: [{pid,<0.969.0>},
+                       {id,{emqttd_pubsub,8}},
+                       {mfargs,
+                           {emqttd_pubsub,start_link,
+                               [pubsub,8,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_pubsub_sup}
+             started: [{pid,<0.961.0>},
+                       {id,pubsub_pool},
+                       {mfargs,
+                           {emqttd_pool_sup,start_link,
+                               [pubsub,hash,8,
+                                {emqttd_pubsub,start_link,
+                                    [[{pool_size,8}]]}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.970.0>,emqttd_pool_sup}
+             started: [{pid,<0.971.0>},
+                       {id,{emqttd_server,1}},
+                       {mfargs,
+                           {emqttd_server,start_link,
+                               [server,1,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.970.0>,emqttd_pool_sup}
+             started: [{pid,<0.972.0>},
+                       {id,{emqttd_server,2}},
+                       {mfargs,
+                           {emqttd_server,start_link,
+                               [server,2,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.970.0>,emqttd_pool_sup}
+             started: [{pid,<0.973.0>},
+                       {id,{emqttd_server,3}},
+                       {mfargs,
+                           {emqttd_server,start_link,
+                               [server,3,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.970.0>,emqttd_pool_sup}
+             started: [{pid,<0.974.0>},
+                       {id,{emqttd_server,4}},
+                       {mfargs,
+                           {emqttd_server,start_link,
+                               [server,4,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.970.0>,emqttd_pool_sup}
+             started: [{pid,<0.975.0>},
+                       {id,{emqttd_server,5}},
+                       {mfargs,
+                           {emqttd_server,start_link,
+                               [server,5,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.970.0>,emqttd_pool_sup}
+             started: [{pid,<0.976.0>},
+                       {id,{emqttd_server,6}},
+                       {mfargs,
+                           {emqttd_server,start_link,
+                               [server,6,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.970.0>,emqttd_pool_sup}
+             started: [{pid,<0.977.0>},
+                       {id,{emqttd_server,7}},
+                       {mfargs,
+                           {emqttd_server,start_link,
+                               [server,7,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.970.0>,emqttd_pool_sup}
+             started: [{pid,<0.978.0>},
+                       {id,{emqttd_server,8}},
+                       {mfargs,
+                           {emqttd_server,start_link,
+                               [server,8,[{pool_size,8}]]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_pubsub_sup}
+             started: [{pid,<0.970.0>},
+                       {id,server_pool},
+                       {mfargs,
+                           {emqttd_pool_sup,start_link,
+                               [server,hash,8,
+                                {emqttd_server,start_link,
+                                    [[{pool_size,8}]]}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.960.0>},
+                       {id,emqttd_pubsub_sup},
+                       {mfargs,{emqttd_pubsub_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.979.0>},
+                       {id,emqttd_stats},
+                       {mfargs,{emqttd_stats,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,10000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.980.0>},
+                       {id,emqttd_metrics},
+                       {mfargs,{emqttd_metrics,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,10000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.981.0>,emqttd_pool_sup}
+             started: [{pid,<0.982.0>},
+                       {id,{emqttd_pooler,1}},
+                       {mfargs,{emqttd_pooler,start_link,[pooler,1]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.981.0>,emqttd_pool_sup}
+             started: [{pid,<0.983.0>},
+                       {id,{emqttd_pooler,2}},
+                       {mfargs,{emqttd_pooler,start_link,[pooler,2]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.981.0>,emqttd_pool_sup}
+             started: [{pid,<0.984.0>},
+                       {id,{emqttd_pooler,3}},
+                       {mfargs,{emqttd_pooler,start_link,[pooler,3]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.981.0>,emqttd_pool_sup}
+             started: [{pid,<0.985.0>},
+                       {id,{emqttd_pooler,4}},
+                       {mfargs,{emqttd_pooler,start_link,[pooler,4]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.981.0>},
+                       {id,emqttd_pooler},
+                       {mfargs,{emqttd_pooler,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_trace_sup}
+             started: [{pid,<0.987.0>},
+                       {id,trace},
+                       {mfargs,{emqttd_trace,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.986.0>},
+                       {id,emqttd_trace_sup},
+                       {mfargs,{emqttd_trace_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.989.0>,emqttd_pool_sup}
+             started: [{pid,<0.990.0>},
+                       {id,{emqttd_cm,1}},
+                       {mfargs,
+                           {emqttd_cm,start_link,
+                               [emqttd_cm,1,#Fun<emqttd_stats.1.131133372>]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.989.0>,emqttd_pool_sup}
+             started: [{pid,<0.991.0>},
+                       {id,{emqttd_cm,2}},
+                       {mfargs,
+                           {emqttd_cm,start_link,
+                               [emqttd_cm,2,#Fun<emqttd_stats.1.131133372>]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.989.0>,emqttd_pool_sup}
+             started: [{pid,<0.992.0>},
+                       {id,{emqttd_cm,3}},
+                       {mfargs,
+                           {emqttd_cm,start_link,
+                               [emqttd_cm,3,#Fun<emqttd_stats.1.131133372>]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.989.0>,emqttd_pool_sup}
+             started: [{pid,<0.993.0>},
+                       {id,{emqttd_cm,4}},
+                       {mfargs,
+                           {emqttd_cm,start_link,
+                               [emqttd_cm,4,#Fun<emqttd_stats.1.131133372>]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_cm_sup}
+             started: [{pid,<0.989.0>},
+                       {id,pool_sup},
+                       {mfargs,
+                           {emqttd_pool_sup,start_link,
+                               [emqttd_cm,hash,4,
+                                {emqttd_cm,start_link,
+                                    [#Fun<emqttd_stats.1.131133372>]}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.988.0>},
+                       {id,emqttd_cm_sup},
+                       {mfargs,{emqttd_cm_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sm_sup}
+             started: [{pid,<0.995.0>},
+                       {id,emqttd_sm_helper},
+                       {mfargs,
+                           {emqttd_sm_helper,start_link,
+                               [#Fun<emqttd_stats.1.131133372>]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.996.0>,emqttd_pool_sup}
+             started: [{pid,<0.997.0>},
+                       {id,{emqttd_sm,1}},
+                       {mfargs,{emqttd_sm,start_link,[emqttd_sm,1]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.996.0>,emqttd_pool_sup}
+             started: [{pid,<0.998.0>},
+                       {id,{emqttd_sm,2}},
+                       {mfargs,{emqttd_sm,start_link,[emqttd_sm,2]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.996.0>,emqttd_pool_sup}
+             started: [{pid,<0.999.0>},
+                       {id,{emqttd_sm,3}},
+                       {mfargs,{emqttd_sm,start_link,[emqttd_sm,3]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {<0.996.0>,emqttd_pool_sup}
+             started: [{pid,<0.1000.0>},
+                       {id,{emqttd_sm,4}},
+                       {mfargs,{emqttd_sm,start_link,[emqttd_sm,4]}},
+                       {restart_type,transient},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sm_sup}
+             started: [{pid,<0.996.0>},
+                       {id,pool_sup},
+                       {mfargs,
+                           {emqttd_pool_sup,start_link,
+                               [emqttd_sm,hash,4,{emqttd_sm,start_link,[]}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.994.0>},
+                       {id,emqttd_sm_sup},
+                       {mfargs,{emqttd_sm_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.1001.0>},
+                       {id,emqttd_session_sup},
+                       {mfargs,{emqttd_session_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.1002.0>},
+                       {id,emqttd_ws_client_sup},
+                       {mfargs,{emqttd_ws_client_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.1003.0>},
+                       {id,emqttd_broker},
+                       {mfargs,{emqttd_broker,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,10000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.1004.0>},
+                       {id,emqttd_alarm},
+                       {mfargs,{emqttd_alarm,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,10000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.1005.0>},
+                       {id,emqttd_mod_sup},
+                       {mfargs,{emqttd_mod_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,10000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:33 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.1006.0>},
+                       {id,emqttd_bridge_sup_sup},
+                       {mfargs,{emqttd_bridge_sup_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.1007.0>},
+                       {id,emqttd_access_control},
+                       {mfargs,{emqttd_access_control,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,10000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,emqttd_sysmon_sup}
+             started: [{pid,<0.1016.0>},
+                       {id,sysmon},
+                       {mfargs,
+                           {emqttd_sysmon,start_link,
+                               [[{long_gc,false},
+                                 {long_schedule,240},
+                                 {large_heap,8388608},
+                                 {busy_dist_port,true}]]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,emqttd_sup}
+             started: [{pid,<0.1015.0>},
+                       {id,emqttd_sysmon_sup},
+                       {mfargs,{emqttd_sysmon_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,emqttd_mod_sup}
+             started: [{pid,<0.1017.0>},
+                       {id,emqttd_mod_retainer},
+                       {mfargs,
+                           {emqttd_mod_retainer,start_link,
+                               [[{storage_type,disc},
+                                 {max_message_num,100000},
+                                 {max_playload_size,65536},
+                                 {expired_after,0}]]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,emqttd_dashboard_sup}
+             started: [{pid,<0.1026.0>},
+                       {id,emqttd_dashboard_admin},
+                       {mfargs,{emqttd_dashboard_admin,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {<0.1029.0>,esockd_listener_sup}
+             started: [{pid,<0.1030.0>},
+                       {id,connection_sup},
+                       {mfargs,
+                        {esockd_connection_sup,start_link,
+                         [[{sockopts,
+                            [binary,
+                             {reuseaddr,true},
+                             {packet,raw},
+                             {backlog,1024},
+                             {recbuf,8192},
+                             {exit_on_close,false},
+                             {nodelay,false}]},
+                           {acceptors,4},
+                           {max_clients,512}],
+                          {mochiweb_http,start_link,
+                           [{emqttd_dashboard,handle_request,
+                             [{state,
+                               "/home/dinhquy/Desktop/emqttd/lib/emqttd_dashboard-2.0/priv/www",
+                               #Fun<emqttd_dashboard.1.131900684>}]}]},
+                          {gen_logger,lager_logger,8}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {<0.1029.0>,esockd_listener_sup}
+             started: [{pid,<0.1031.0>},
+                       {id,acceptor_sup},
+                       {mfargs,
+                           {esockd_acceptor_sup,start_link,
+                               [<0.1030.0>,#Fun<esockd_server.0.76791649>,
+                                #Fun<esockd_listener_sup.1.16895020>,
+                                {gen_logger,lager_logger,8}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {<0.1029.0>,esockd_listener_sup}
+             started: [{pid,<0.1032.0>},
+                       {id,listener},
+                       {mfargs,
+                           {esockd_listener,start_link,
+                               [dashboard,18083,
+                                [{sockopts,
+                                     [binary,
+                                      {reuseaddr,true},
+                                      {packet,raw},
+                                      {backlog,1024},
+                                      {recbuf,8192},
+                                      {exit_on_close,false},
+                                      {nodelay,false}]},
+                                 {acceptors,4},
+                                 {max_clients,512}],
+                                <0.1031.0>,
+                                {gen_logger,lager_logger,8}]}},
+                       {restart_type,transient},
+                       {shutdown,4294967295},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,esockd_sup}
+             started: [{pid,<0.1029.0>},
+                       {id,{listener_sup,{dashboard,18083}}},
+                       {mfargs,
+                        {esockd_listener_sup,start_link,
+                         [dashboard,18083,
+                          [{sockopts,
+                            [binary,
+                             {reuseaddr,true},
+                             {packet,raw},
+                             {backlog,1024},
+                             {recbuf,8192},
+                             {exit_on_close,false},
+                             {nodelay,false}]},
+                           {acceptors,4},
+                           {max_clients,512}],
+                          {mochiweb_http,start_link,
+                           [{emqttd_dashboard,handle_request,
+                             [{state,
+                               "/home/dinhquy/Desktop/emqttd/lib/emqttd_dashboard-2.0/priv/www",
+                               #Fun<emqttd_dashboard.1.131900684>}]}]}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: emqttd_dashboard
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {<0.1037.0>,esockd_listener_sup}
+             started: [{pid,<0.1038.0>},
+                       {id,connection_sup},
+                       {mfargs,
+                           {esockd_connection_sup,start_link,
+                               [[{acceptors,16},
+                                 {max_clients,512},
+                                 {access,[{allow,all}]},
+                                 {connopts,[]},
+                                 {sockopts,
+                                     [binary,
+                                      {packet,raw},
+                                      {reuseaddr,true},
+                                      {backlog,1024},
+                                      {nodelay,true}]}],
+                                {emqttd_client,start_link,
+                                    [[{max_clientid_len,512},
+                                      {max_packet_size,65536},
+                                      {client_idle_timeout,30}]]},
+                                {gen_logger,lager_logger,8}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {<0.1037.0>,esockd_listener_sup}
+             started: [{pid,<0.1039.0>},
+                       {id,acceptor_sup},
+                       {mfargs,
+                           {esockd_acceptor_sup,start_link,
+                               [<0.1038.0>,#Fun<esockd_server.0.76791649>,
+                                #Fun<esockd_listener_sup.1.16895020>,
+                                {gen_logger,lager_logger,8}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {<0.1037.0>,esockd_listener_sup}
+             started: [{pid,<0.1040.0>},
+                       {id,listener},
+                       {mfargs,
+                           {esockd_listener,start_link,
+                               [mqtt,1883,
+                                [{acceptors,16},
+                                 {max_clients,512},
+                                 {access,[{allow,all}]},
+                                 {connopts,[]},
+                                 {sockopts,
+                                     [binary,
+                                      {packet,raw},
+                                      {reuseaddr,true},
+                                      {backlog,1024},
+                                      {nodelay,true}]}],
+                                <0.1039.0>,
+                                {gen_logger,lager_logger,8}]}},
+                       {restart_type,transient},
+                       {shutdown,4294967295},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,esockd_sup}
+             started: [{pid,<0.1037.0>},
+                       {id,{listener_sup,{mqtt,1883}}},
+                       {mfargs,
+                           {esockd_listener_sup,start_link,
+                               [mqtt,1883,
+                                [{acceptors,16},
+                                 {max_clients,512},
+                                 {access,[{allow,all}]},
+                                 {connopts,[]},
+                                 {sockopts,
+                                     [binary,
+                                      {packet,raw},
+                                      {reuseaddr,true},
+                                      {backlog,1024},
+                                      {nodelay,true}]}],
+                                {emqttd_client,start_link,
+                                    [[{max_clientid_len,512},
+                                      {max_packet_size,65536},
+                                      {client_idle_timeout,30}]]}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {<0.1057.0>,esockd_listener_sup}
+             started: [{pid,<0.1058.0>},
+                       {id,connection_sup},
+                       {mfargs,
+                           {esockd_connection_sup,start_link,
+                               [[{acceptors,4},
+                                 {max_clients,512},
+                                 {access,[{allow,all}]},
+                                 {ssl,
+                                     [{handshake_timeout,10000},
+                                      {certfile,"etc/ssl/ssl.crt"},
+                                      {keyfile,"etc/ssl/ssl.key"}]},
+                                 {sockopts,
+                                     [binary,
+                                      {packet,raw},
+                                      {reuseaddr,true},
+                                      {backlog,1024},
+                                      {nodelay,true}]}],
+                                {emqttd_client,start_link,
+                                    [[{max_clientid_len,512},
+                                      {max_packet_size,65536},
+                                      {client_idle_timeout,30}]]},
+                                {gen_logger,lager_logger,8}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {<0.1057.0>,esockd_listener_sup}
+             started: [{pid,<0.1059.0>},
+                       {id,acceptor_sup},
+                       {mfargs,
+                           {esockd_acceptor_sup,start_link,
+                               [<0.1058.0>,#Fun<esockd_server.0.76791649>,
+                                #Fun<esockd_listener_sup.1.16895020>,
+                                {gen_logger,lager_logger,8}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {<0.1057.0>,esockd_listener_sup}
+             started: [{pid,<0.1060.0>},
+                       {id,listener},
+                       {mfargs,
+                           {esockd_listener,start_link,
+                               [mqtts,8883,
+                                [{acceptors,4},
+                                 {max_clients,512},
+                                 {access,[{allow,all}]},
+                                 {ssl,
+                                     [{handshake_timeout,10000},
+                                      {certfile,"etc/ssl/ssl.crt"},
+                                      {keyfile,"etc/ssl/ssl.key"}]},
+                                 {sockopts,
+                                     [binary,
+                                      {packet,raw},
+                                      {reuseaddr,true},
+                                      {backlog,1024},
+                                      {nodelay,true}]}],
+                                <0.1059.0>,
+                                {gen_logger,lager_logger,8}]}},
+                       {restart_type,transient},
+                       {shutdown,4294967295},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,esockd_sup}
+             started: [{pid,<0.1057.0>},
+                       {id,{listener_sup,{mqtts,8883}}},
+                       {mfargs,
+                           {esockd_listener_sup,start_link,
+                               [mqtts,8883,
+                                [{acceptors,4},
+                                 {max_clients,512},
+                                 {access,[{allow,all}]},
+                                 {ssl,
+                                     [{handshake_timeout,10000},
+                                      {certfile,"etc/ssl/ssl.crt"},
+                                      {keyfile,"etc/ssl/ssl.key"}]},
+                                 {sockopts,
+                                     [binary,
+                                      {packet,raw},
+                                      {reuseaddr,true},
+                                      {backlog,1024},
+                                      {nodelay,true}]}],
+                                {emqttd_client,start_link,
+                                    [[{max_clientid_len,512},
+                                      {max_packet_size,65536},
+                                      {client_idle_timeout,30}]]}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {<0.1065.0>,esockd_listener_sup}
+             started: [{pid,<0.1066.0>},
+                       {id,connection_sup},
+                       {mfargs,
+                           {esockd_connection_sup,start_link,
+                               [[{acceptors,4},
+                                 {max_clients,64},
+                                 {access,[{allow,all}]},
+                                 {sockopts,
+                                     [binary,
+                                      {reuseaddr,true},
+                                      {packet,raw},
+                                      {backlog,1024},
+                                      {recbuf,8192},
+                                      {exit_on_close,false},
+                                      {nodelay,false}]}],
+                                {mochiweb_http,start_link,
+                                    [{emqttd_http,handle_request,[]}]},
+                                {gen_logger,lager_logger,8}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {<0.1065.0>,esockd_listener_sup}
+             started: [{pid,<0.1067.0>},
+                       {id,acceptor_sup},
+                       {mfargs,
+                           {esockd_acceptor_sup,start_link,
+                               [<0.1066.0>,#Fun<esockd_server.0.76791649>,
+                                #Fun<esockd_listener_sup.1.16895020>,
+                                {gen_logger,lager_logger,8}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {<0.1065.0>,esockd_listener_sup}
+             started: [{pid,<0.1068.0>},
+                       {id,listener},
+                       {mfargs,
+                           {esockd_listener,start_link,
+                               [http,8083,
+                                [{acceptors,4},
+                                 {max_clients,64},
+                                 {access,[{allow,all}]},
+                                 {sockopts,
+                                     [binary,
+                                      {reuseaddr,true},
+                                      {packet,raw},
+                                      {backlog,1024},
+                                      {recbuf,8192},
+                                      {exit_on_close,false},
+                                      {nodelay,false}]}],
+                                <0.1067.0>,
+                                {gen_logger,lager_logger,8}]}},
+                       {restart_type,transient},
+                       {shutdown,4294967295},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,esockd_sup}
+             started: [{pid,<0.1065.0>},
+                       {id,{listener_sup,{http,8083}}},
+                       {mfargs,
+                           {esockd_listener_sup,start_link,
+                               [http,8083,
+                                [{acceptors,4},
+                                 {max_clients,64},
+                                 {access,[{allow,all}]},
+                                 {sockopts,
+                                     [binary,
+                                      {reuseaddr,true},
+                                      {packet,raw},
+                                      {backlog,1024},
+                                      {recbuf,8192},
+                                      {exit_on_close,false},
+                                      {nodelay,false}]}],
+                                {mochiweb_http,start_link,
+                                    [{emqttd_http,handle_request,[]}]}]}},
+                       {restart_type,transient},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: emqttd
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,gr_sup}
+             started: [{pid,<0.1077.0>},
+                       {id,gr_counter_sup},
+                       {mfargs,{gr_counter_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,gr_sup}
+             started: [{pid,<0.1078.0>},
+                       {id,gr_param_sup},
+                       {mfargs,{gr_param_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,gr_sup}
+             started: [{pid,<0.1079.0>},
+                       {id,gr_manager_sup},
+                       {mfargs,{gr_manager_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: goldrush
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,lager_sup}
+             started: [{pid,<0.1084.0>},
+                       {id,lager},
+                       {mfargs,{gen_event,start_link,[{local,lager_event}]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,lager_sup}
+             started: [{pid,<0.1085.0>},
+                       {id,lager_handler_watcher_sup},
+                       {mfargs,{lager_handler_watcher_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,lager_sup}
+             started: [{pid,<0.1086.0>},
+                       {id,lager_crash_log},
+                       {mfargs,
+                           {lager_crash_log,start_link,
+                               ["log/emqttd_crash.log",65536,10485760,
+                                [{hour,0}],
+                                5]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,gr_param_sup}
+             started: [{pid,<0.1093.0>},
+                       {id,gr_lager_default_tracer_params},
+                       {mfargs,
+                           {gr_param,start_link,
+                               [gr_lager_default_tracer_params]}},
+                       {restart_type,transient},
+                       {shutdown,brutal_kill},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,gr_counter_sup}
+             started: [{pid,<0.1094.0>},
+                       {id,gr_lager_default_tracer_counters},
+                       {mfargs,
+                           {gr_counter,start_link,
+                               [gr_lager_default_tracer_counters]}},
+                       {restart_type,transient},
+                       {shutdown,brutal_kill},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,gr_manager_sup}
+             started: [{pid,<0.1095.0>},
+                       {id,gr_lager_default_tracer_params_mgr},
+                       {mfargs,
+                           {gr_manager,start_link,
+                               [gr_lager_default_tracer_params_mgr,
+                                gr_lager_default_tracer_params,[]]}},
+                       {restart_type,transient},
+                       {shutdown,brutal_kill},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,gr_manager_sup}
+             started: [{pid,<0.1096.0>},
+                       {id,gr_lager_default_tracer_counters_mgr},
+                       {mfargs,
+                           {gr_manager,start_link,
+                               [gr_lager_default_tracer_counters_mgr,
+                                gr_lager_default_tracer_counters,
+                                [{input,0},{filter,0},{output,0}]]}},
+                       {restart_type,transient},
+                       {shutdown,brutal_kill},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: lager
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: recon
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: eldap
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: poolboy
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: bson
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+          supervisor: {local,mc_super_sup}
+             started: [{pid,<0.1108.0>},
+                       {id,mongo_id_server},
+                       {mfargs,{mongo_id_server,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: mongodb
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: ecpool
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: mysql
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: epgsql
+          started_at: 'emqttd@127.0.0.1'
+
+=PROGRESS REPORT==== 27-Nov-2016::15:41:34 ===
+         application: eredis
+          started_at: 'emqttd@127.0.0.1'

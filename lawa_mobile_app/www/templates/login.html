@@ -1,0 +1,30 @@
+<ion-view view-title="Đăng nhập">
+    <ion-content class="padding background-login" ng-controller="loginCtrl">
+            <div  class="icon-lawa">
+                <img width="150px" src="../img/Admin-icon.png"> 
+            </div>
+            <div class="login-title">
+            Quản lý hệ thống lawa - utt
+            </div>
+            <div class="loginResult {{classmessage}}">            
+                 <div ng-if="loading == true">
+                            <ion-spinner class="spinner-calm"></ion-spinner> 
+                            <br> 
+                </div>
+                {{message}}
+            </div>
+           
+            <div class="list">
+                <label class="item item-input " style="border-top-left-radius: 6px; border-top-right-radius: 6px;" >
+                    <input ng-disabled="isLogin" ng-model="username" type="text" placeholder="Tên đăng nhập">
+                </label>
+                <label class="item item-input "  style="border-bottom-right-radius: 6px; border-bottom-left-radius: 6px;">
+                    <input ng-disabled="isLogin" class="{{formelement}}" ng-model="passwd" type="password" placeholder="Mật khẩu">
+                </label>
+            </div>
+            <button ng-click="login()" class="button button-block button-positive">
+                Đăng nhập hệ thống
+            </button>
+    </ion-content>
+</ion-view>
+

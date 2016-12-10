@@ -1,0 +1,78 @@
+/* Empty. Add your own CSS if you like */
+.center-icon{
+    text-align: center;
+    font-size: 100px;
+    padding-top: 20px;
+    color: white;
+}
+.label-state{
+    color: white;
+    font-size: 20px;
+}
+.color-item{
+    background: darkgreen;
+}
+.spacing-between{
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding: 70px 0;
+}
+.col-right{
+    float: right;
+}
+.col-style{
+    width: 60%;
+    background: #28a54c;
+    height: 70px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px
+}
+.graphics-item{
+    background: #eee;
+}
+.overheight{
+    background: red;
+}
+.toggle-restyle{
+    font-size: 23px;
+    margin-right: 10px;
+}
+.login-title{
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin:  25px 0px;
+    text-transform: uppercase;
+    color: #fff;  
+}
+.loginResult{
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+.errmessage{
+    color: #ff8a00;
+}
+.successmessage{
+    color: #ff8a00;
+}
+.background-login{
+    background: #008272 none repeat scroll 0 0;
+}
+.safestyle{
+    background: #28a54c;
+}
+.warningstyle{
+    background: red;
+}
+.icon-lawa{ 
+
+    text-align: center!important;
+    width: 100%; 
+    margin-top: 50px;
+}

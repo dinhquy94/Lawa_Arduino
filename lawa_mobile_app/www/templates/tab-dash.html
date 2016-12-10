@@ -1,0 +1,75 @@
+<ion-view view-title="Tổng quan hệ thống">
+  <ion-content class="">
+    <div class="center-icon {{safestyle}}" style="height: 200px; width: 100%; ">
+        <i class="{{icon}}" style="display: block"></i>
+        <label class="label-state">{{message}}</label>
+    </div>
+    <a class="item item-icon-left" href="#/tab/chats">
+      <i class="icon ion-android-boat"></i>
+      Hệ thống
+      <span class="badge badge-assertive">{{message}}</span>
+    </a>
+    <a class="item item-icon-left" href="#">
+      <i class="icon ion-navicon"></i>
+      Mực nước hiện tại
+    <span class="item-note">
+      Cập nhật lúc {{thoidiem}}
+    </span>
+      <span class="badge badge-calm">{{waterlevel}}m</span>
+    </a>
+  
+    
+    <div class="item item-divider">
+    Dung lượng pin mặt trời
+    </div>
+    <a class="item item-icon-left" href="#">
+      <i class="icon ion-battery-charging"></i>
+      Cột 1
+      <span class="badge badge-balanced">{{dlpincot1}}%</span>
+    </a>
+    <a class="item item-icon-left" href="#">
+      <i class="icon ion-battery-charging"></i>
+     Cột 2
+      <span class="badge badge-balanced">{{dlpincot2}}%</span>
+    </a>
+    <a class="item item-icon-left" href="#">
+      <i class="icon ion-battery-charging"></i>
+      Cột 3
+      <span class="badge badge-balanced">{{dlpincot3}}%</span>
+    </a>
+    <a class="item item-icon-left" href="#">
+      <i class="icon ion-battery-charging"></i>
+      Cột 4
+      <span class="badge badge-balanced">{{dlpincot4}}%</span>
+    </a>
+     <a class="item item-icon-left" href="#">
+      <i class="icon ion-battery-charging"></i>
+      Bộ xử lý trung tâm
+      <span class="badge badge-balanced">{{dlpincottrungtam}}%</span>
+    </a>
+     <a class="item item-icon-left" href="#">
+      <i class="icon ion-battery-charging"></i>
+      Cột cảnh báo 1
+      <span class="badge badge-balanced">{{dlpincotcanhbao1}}%</span>
+    </a>
+     <a class="item item-icon-left" href="#">
+      <i class="icon ion-battery-charging"></i>
+      Cột cảnh báo 1
+      <span class="badge badge-balanced">{{dlpincotcanhbao2}}%</span>
+    </a>
+      <div class="item item-divider">
+    Thông báo từ hệ thống
+    </div>
+    <a class="item  " href="#">
+      <h2>Bộ xử lý</h2>
+      <p>{{thongtinhethong}}</p>
+    </a>
+    <div class="item item-divider">
+      Người dùng
+    </div>
+    <a ng-click="logout()" class="item item-icon-left" href="#">
+      <i class="icon ion-log-out"></i>
+      Đăng xuất
+    </a>
+  </ion-content>
+</ion-view>

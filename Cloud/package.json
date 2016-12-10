@@ -1,0 +1,12 @@
+{
+  "name": "cloudproject",
+  "version": "1.0.0",
+  "description": "no",
+  "main": "server.js",
+  "scripts": {
+    "test": "batdau",
+    "start": "node server.js"
+  },
+  "author": "quy",
+  "license": "ISC"
+}

@@ -1,0 +1,16 @@
+
+[ { _id: 'TB210494',
+    id: '4b90363f-a98e-4035-8067-84f7720f1f11',
+    lattitude: 18.1122,
+    locationname: 'Cau Duong',
+    longtitude: 12.1112 },
+  { _id: 'TB11233',
+    id: '2d6eb23d-e4ce-4e59-be7f-27cc49f686f2',
+    lattitude: 18.1122,
+    locationname: 'Cau Nghenh',
+    longtitude: 12.1112 },
+  { _id: 'TB1212122',
+    id: 'd92a2cc4-5d0f-48d9-bfb7-20f1b51877bb',
+    lattitude: 18.1122,
+    locationname: 'Cau Long Bien',
+    longtitude: 12.1112 } ]

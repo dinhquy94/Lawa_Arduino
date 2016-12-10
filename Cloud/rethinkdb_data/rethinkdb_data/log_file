@@ -1,0 +1,55 @@
+2016-10-21T08:40:25.297928664 0.660794s notice: Recursively removing directory /home/dinhquy/emqttd/Cloud/rethinkdb_data/rethinkdb_data/tmp
+2016-10-21T08:40:25.354057643 0.716922s notice: Initializing directory /home/dinhquy/emqttd/Cloud/rethinkdb_data/rethinkdb_data
+2016-10-21T08:40:25.354166257 0.717031s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/dinhquy/emqttd/Cloud/rethinkdb_data/rethinkdb_data' did not already exist or is empty.)
+2016-10-21T08:40:25.363535848 0.726402s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2016-10-21T08:40:25.366257014 0.729124s notice: Running on Linux 4.4.0-38-generic x86_64
+2016-10-21T08:40:25.366333005 0.729198s notice: Loading data from directory /home/dinhquy/emqttd/Cloud/rethinkdb_data/rethinkdb_data
+2016-10-21T08:40:25.946462557 1.309327s info: Automatically using cache size of 309 MB
+2016-10-21T08:40:25.947854886 1.310720s notice: Listening for intracluster connections on port 29015
+2016-10-21T08:40:26.009460160 1.372325s notice: Listening for client driver connections on port 28015
+2016-10-21T08:40:26.009612487 1.372477s notice: Listening for administrative HTTP connections on port 8080
+2016-10-21T08:40:26.009613347 1.372478s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-21T08:40:26.009614851 1.372479s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-21T08:40:26.009615469 1.372480s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-21T08:40:26.009618493 1.372483s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-10-21T08:40:26.009621819 1.372486s notice: Server ready, "dinhquy_HP_Notebook_g7k" abd98bfe-cede-4e62-bba6-44a07d8c43a8
+2016-10-21T08:41:33.322561636 68.685427s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-10-21T08:41:33.322667663 68.685532s notice: Shutting down client connections...
+2016-10-21T08:41:33.322768951 68.685633s notice: All client connections closed.
+2016-10-21T08:41:33.322773146 68.685638s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-10-21T08:41:33.361219083 68.724084s notice: Storage engine shut down.
+2016-10-22T09:25:23.124460878 0.068680s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2016-10-22T09:25:23.156776875 0.100998s notice: Running on Linux 4.4.0-38-generic x86_64
+2016-10-22T09:25:23.156839851 0.101059s notice: Loading data from directory /home/dinhquy/emqttd/Cloud/rethinkdb_data/rethinkdb_data
+2016-10-22T09:25:23.350032970 0.294252s info: Automatically using cache size of 889 MB
+2016-10-22T09:25:23.350991396 0.295211s notice: Listening for intracluster connections on port 29015
+2016-10-22T09:25:23.439162816 0.383383s notice: Listening for client driver connections on port 28015
+2016-10-22T09:25:23.439571557 0.383791s notice: Listening for administrative HTTP connections on port 8080
+2016-10-22T09:25:23.439583441 0.383803s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-22T09:25:23.439594593 0.383814s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-22T09:25:23.439601617 0.383821s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-22T09:25:23.439608761 0.383828s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-10-22T09:25:23.439615277 0.383834s notice: Server ready, "dinhquy_HP_Notebook_g7k" abd98bfe-cede-4e62-bba6-44a07d8c43a8
+2016-10-22T09:25:23.562467563 0.506687s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2016-10-22T12:17:45.815336093 10342.759556s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-10-22T12:17:45.815457676 10342.759677s notice: Shutting down client connections...
+2016-10-22T12:17:45.815503960 10342.759723s notice: All client connections closed.
+2016-10-22T12:17:45.815506561 10342.759726s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-10-22T12:17:45.854442447 10342.798662s notice: Storage engine shut down.
+2016-10-24T08:57:59.376501923 5.616964s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2016-10-24T08:57:59.392943072 5.633408s notice: Running on Linux 4.4.0-45-generic x86_64
+2016-10-24T08:57:59.393083831 5.633546s notice: Loading data from directory /home/dinhquy/emqttd/Cloud/rethinkdb_data/rethinkdb_data
+2016-10-24T08:57:59.602113990 5.842576s info: Automatically using cache size of 293 MB
+2016-10-24T08:57:59.603119820 5.843582s notice: Listening for intracluster connections on port 29015
+2016-10-24T08:57:59.690365274 5.930828s notice: Listening for client driver connections on port 28015
+2016-10-24T08:57:59.690530983 5.930994s notice: Listening for administrative HTTP connections on port 8080
+2016-10-24T08:57:59.690532866 5.930995s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-24T08:57:59.690535135 5.930998s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-24T08:57:59.690536122 5.930998s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-24T08:57:59.690540380 5.931002s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-10-24T08:57:59.690543834 5.931006s notice: Server ready, "dinhquy_HP_Notebook_g7k" abd98bfe-cede-4e62-bba6-44a07d8c43a8
+2016-10-24T08:58:26.925594162 33.166057s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-10-24T08:58:26.925716813 33.166179s notice: Shutting down client connections...
+2016-10-24T08:58:26.925768330 33.166230s notice: All client connections closed.
+2016-10-24T08:58:26.925770319 33.166232s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-10-24T08:58:26.966370914 33.206834s notice: Storage engine shut down.

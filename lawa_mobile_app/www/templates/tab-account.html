@@ -1,0 +1,18 @@
+<ion-view view-title="Thông điệp và cảnh báo">
+  <ion-content ng-controller="AccountCtrl">
+    <ion-list>
+    <div class="center-icon {{safestyle}}" style="height: 200px; width: 100%; ">
+        <i class="{{icon}}" style="display: block"></i>
+        <label class="label-state">{{message}}</label>
+    </div>
+      <ion-toggle   ng-click="changeWarningState(1)" ng-model="enable1"  toggle-class="toggle-assertive">
+         <i class="ion-volume-medium toggle-restyle"></i> Báo động 1
+      </ion-toggle>
+        <ion-toggle  ng-model="enable2" ng-change="changeWarningState(2)"  toggle-class="toggle-assertive">
+          <i class="ion-volume-medium toggle-restyle"></i>Báo động 2
+        </ion-toggle>            
+        <div class="padding ">      
+        </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

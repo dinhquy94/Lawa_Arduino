@@ -1,0 +1,73 @@
+2016-10-14T07:09:44.282287210 0.065081s notice: Recursively removing directory /home/dinhquy/emqttd/Cloud/rethinkdb_data/tmp
+2016-10-14T07:09:44.309269008 0.092062s notice: Initializing directory /home/dinhquy/emqttd/Cloud/rethinkdb_data
+2016-10-14T07:09:44.309480747 0.092276s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/dinhquy/emqttd/Cloud/rethinkdb_data' did not already exist or is empty.)
+2016-10-14T07:09:44.309553557 0.092346s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2016-10-14T07:09:44.312828633 0.095624s notice: Running on Linux 4.4.0-38-generic x86_64
+2016-10-14T07:09:44.312886229 0.095679s notice: Loading data from directory /home/dinhquy/emqttd/Cloud/rethinkdb_data
+2016-10-14T07:09:44.554602964 0.337396s info: Automatically using cache size of 596 MB
+2016-10-14T07:09:44.555001077 0.337794s notice: Listening for intracluster connections on port 29015
+2016-10-14T07:09:44.558690062 0.341483s notice: Listening for client driver connections on port 28015
+2016-10-14T07:09:44.558910867 0.341703s notice: Listening for administrative HTTP connections on port 8080
+2016-10-14T07:09:44.558913186 0.341706s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-14T07:09:44.558916201 0.341709s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-14T07:09:44.558918495 0.341711s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-14T07:09:44.558920718 0.341713s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-10-14T07:09:44.558923029 0.341716s notice: Server ready, "dinhquy_HP_Notebook_6lr" c730b122-4821-4f59-9948-eacb6881f2a3
+2016-10-14T07:09:44.565797799 0.348591s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2016-10-14T10:48:51.450625967 7511.768431s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-10-14T10:48:51.450735378 7511.768540s notice: Shutting down client connections...
+2016-10-14T10:48:51.450789341 7511.768594s notice: All client connections closed.
+2016-10-14T10:48:51.450791723 7511.768597s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-10-14T10:48:51.451000391 7511.768805s notice: Storage engine shut down.
+2016-10-21T08:41:42.465955258 2.611781s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2016-10-21T08:41:42.473792191 2.619620s notice: Running on Linux 4.4.0-38-generic x86_64
+2016-10-21T08:41:42.473866004 2.619691s notice: Loading data from directory /home/dinhquy/emqttd/Cloud/rethinkdb_data
+2016-10-21T08:41:42.590471067 2.736296s info: Automatically using cache size of 343 MB
+2016-10-21T08:41:42.590979727 2.736805s notice: Listening for intracluster connections on port 29015
+2016-10-21T08:41:42.592159949 2.737985s notice: Listening for client driver connections on port 28015
+2016-10-21T08:41:42.592392367 2.738218s notice: Listening for administrative HTTP connections on port 8080
+2016-10-21T08:41:42.592396028 2.738221s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-21T08:41:42.592399959 2.738225s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-21T08:41:42.592402772 2.738228s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-21T08:41:42.592406681 2.738232s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-10-21T08:41:42.592410087 2.738235s notice: Server ready, "dinhquy_HP_Notebook_6lr" c730b122-4821-4f59-9948-eacb6881f2a3
+2016-10-21T08:41:52.893094446 13.038920s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-10-21T08:41:52.893226819 13.039052s notice: Shutting down client connections...
+2016-10-21T08:41:52.893274776 13.039100s notice: All client connections closed.
+2016-10-21T08:41:52.893277169 13.039102s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-10-21T08:41:52.893455913 13.039281s notice: Storage engine shut down.
+2016-10-24T08:58:33.132523874 0.196555s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2016-10-24T08:58:33.141557957 0.205592s notice: Running on Linux 4.4.0-45-generic x86_64
+2016-10-24T08:58:33.141636217 0.205667s notice: Loading data from directory /home/dinhquy/emqttd/Cloud/rethinkdb_data
+2016-10-24T08:58:33.261628620 0.325660s info: Automatically using cache size of 265 MB
+2016-10-24T08:58:33.262040852 0.326072s notice: Listening for intracluster connections on port 29015
+2016-10-24T08:58:33.262976977 0.327008s notice: Listening for client driver connections on port 28015
+2016-10-24T08:58:33.263149224 0.327180s notice: Listening for administrative HTTP connections on port 8080
+2016-10-24T08:58:33.263151498 0.327182s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-24T08:58:33.263155166 0.327186s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-24T08:58:33.263157053 0.327188s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-24T08:58:33.263159571 0.327190s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-10-24T08:58:33.263162116 0.327193s notice: Server ready, "dinhquy_HP_Notebook_6lr" c730b122-4821-4f59-9948-eacb6881f2a3
+2016-10-24T08:58:40.533352982 7.597384s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-10-24T08:58:40.533466865 7.597498s notice: Shutting down client connections...
+2016-10-24T08:58:40.533516460 7.597547s notice: All client connections closed.
+2016-10-24T08:58:40.533518802 7.597550s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-10-24T08:58:40.533716333 7.597747s notice: Storage engine shut down.
+2016-10-24T09:00:33.855425602 0.006748s notice: Running rethinkdb 2.3.5 (GCC 5.4.0)...
+2016-10-24T09:00:33.860712780 0.012038s notice: Running on Linux 4.4.0-45-generic x86_64
+2016-10-24T09:00:33.860886786 0.012209s notice: Loading data from directory /home/dinhquy/emqttd/Cloud/rethinkdb_data
+2016-10-24T09:00:33.932328570 0.083651s info: Automatically using cache size of 332 MB
+2016-10-24T09:00:33.932880902 0.084203s notice: Listening for intracluster connections on port 29015
+2016-10-24T09:00:33.935954781 0.087277s notice: Listening for client driver connections on port 28015
+2016-10-24T09:00:33.936144275 0.087466s notice: Listening for administrative HTTP connections on port 8080
+2016-10-24T09:00:33.936146313 0.087468s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-24T09:00:33.936149738 0.087472s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-24T09:00:33.936151866 0.087474s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-10-24T09:00:33.936154278 0.087476s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-10-24T09:00:33.936156494 0.087479s notice: Server ready, "dinhquy_HP_Notebook_6lr" c730b122-4821-4f59-9948-eacb6881f2a3
+2016-10-24T09:00:34.020103232 0.171425s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2016-10-24T09:00:50.001174256 16.152497s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-10-24T09:00:50.001259844 16.152582s notice: Shutting down client connections...
+2016-10-24T09:00:50.001311154 16.152633s notice: All client connections closed.
+2016-10-24T09:00:50.001313418 16.152636s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-10-24T09:00:50.001497273 16.152819s notice: Storage engine shut down.

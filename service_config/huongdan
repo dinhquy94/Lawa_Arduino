@@ -1,0 +1,11 @@
+1. cd /etc/init.d/emqttd
+2. replace with file emqtt 
+3. follow by this answer
+http://askubuntu.com/questions/9382/how-can-i-configure-a-service-to-run-at-startup
+sudo update-rc.d minidlna defaults
+
+#This should add the service to the automatic #startup system. But if you get: 
+#System start/stop links for /etc/init.d/minidlna already exist. 
+#Do the command 
+#sudo update-rc.d minidlna enable
+
